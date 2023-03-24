@@ -71,11 +71,14 @@ def move():
             targets.append(target)
 
     draw()
+    
+    #Para que el juego no termine se cometó la parte de finalizar el juego
 
-    for target in targets:
-        if not inside(target):
-            return
+    #for target in targets:
+     #   if not inside(target):
+     #       return
     # Aumentar el segundo argumento de ontimer ralentiza el juego y viceversa
+    
     ontimer(move, 25)
 
 
